@@ -1,0 +1,16 @@
+﻿
+@{
+	ViewBag.Title = "LocationResult";
+}
+
+<p>Your latitude is @ViewBag.latt</p>
+<p>Your longitude is @ViewBag.longg</p>
+
+<p>@ViewBag.l</p>
+
+@foreach (string s in ViewBag.AllTemps)
+{
+	@Html.Label(s);
+	<br />
+}
+
